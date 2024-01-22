@@ -1,0 +1,36 @@
+.home {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  font-family: "Poppins";
+  width: 100vw;
+  justify-content: space-around;
+  .left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    h1 {
+      font-size: 10rem;
+      background: linear-gradient(120deg, var(--primary), var(--accent));
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .subtext {
+      width: 50%;
+      font-size: 1.4rem;
+      line-height: 2rem;
+    }
+  }
+  .right {
+    width: 50%;
+  }
+
+  .podium {
+    width: 100%;
+  }
+}
