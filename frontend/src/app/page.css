@@ -35,7 +35,7 @@
   }
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1200px) {
   .home {
     flex-direction: column;
     .left {
