@@ -13,7 +13,7 @@
     align-items: center;
     text-align: center;
     h1 {
-      font-size: 10rem;
+      font-size: 8rem;
       background: linear-gradient(120deg, var(--primary), var(--accent));
       background-clip: text;
       -webkit-background-clip: text;
@@ -32,5 +32,21 @@
 
   .podium {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .home {
+    flex-direction: column;
+    .left {
+      h1 {
+        font-size: 4rem;
+      }
+
+      .subtext {
+        width: 80%;
+        font-size: 1rem;
+      }
+    }
   }
 }
