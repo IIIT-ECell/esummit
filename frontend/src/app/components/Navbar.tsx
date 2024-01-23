@@ -1,7 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 import Image from "next/image";
-import esummitLogo from "../assets/icon_homepage.svg";
+import esummitLogo from "@/assets/icon_homepage.svg";
 
 export default function NavBar() {
   return (
