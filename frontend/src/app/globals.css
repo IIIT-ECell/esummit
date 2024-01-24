@@ -1,0 +1,24 @@
+:root {
+  --text: #edf1f3;
+  --background: #060709;
+  --primary: #a6b8c5;
+  --secondary: #454265;
+  --accent: #7b6fa1;
+
+  --linearPrimarySecondary: linear-gradient(#a6b8c5, #454265);
+  --linearPrimaryAccent: linear-gradient(#a6b8c5, #7b6fa1);
+  --linearSecondaryAccent: linear-gradient(#454265, #7b6fa1);
+  --radialPrimarySecondary: radial-gradient(#a6b8c5, #454265);
+  --radialPrimaryAccent: radial-gradient(#a6b8c5, #7b6fa1);
+  --radialSecondaryAccent: radial-gradient(#454265, #7b6fa1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+}
