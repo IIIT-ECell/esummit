@@ -24,7 +24,7 @@ export default function NavBar() {
             <a href="#">Events</a>
           </li>
           <li>
-            <a href="#">Speakers</a>
+            <a href="#speakers">Speakers</a>
           </li>
           <li>
             <a href="#timeline">Timeline</a>

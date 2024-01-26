@@ -1,0 +1,74 @@
+.speakersList {
+  display: flex;
+  max-width: 80%;
+  justify-content: center;
+  flex-wrap: wrap;
+  transform: translateY(-3rem);
+  .speakerCard {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    p {
+      text-align: center;
+      color: var(--text);
+      font-size: 1.5rem;
+    }
+  }
+
+  .speakerImage {
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+    max-width: 190px;
+    width: 100%;
+    font-size: 16px;
+    box-shadow: none;
+    transform: translateZ(0);
+  }
+
+  .speakerImage *,
+  .speakerImage:before,
+  .speakerImage:after {
+    box-sizing: border-box;
+    transition: all 0.3s linear;
+  }
+
+  .speakerImage:before,
+  .speakerImage:after {
+    box-sizing: border-box;
+    border-radius: 50%;
+    content: "";
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: -1;
+    border: 2px solid var(--accent);
+    /* border-color: transparent var(--accent); */
+    border-color: transparent var(--text);
+  }
+
+  .speakerImage img {
+    max-width: 100%;
+    backface-visibility: hidden;
+    vertical-align: top;
+    border-radius: 50%;
+    padding: 10px;
+  }
+
+  .speakerImage:hover:before,
+  .speakerImage.hover:before {
+    transform: rotate(45deg);
+    border-color: var(--accent);
+    border-width: 5px;
+  }
+
+  .speakerImage:hover:after,
+  .speakerImage.hover:after {
+    transform: rotate(-45deg);
+    border-color: var(--accent);
+    border-width: 5px;
+  }
+}

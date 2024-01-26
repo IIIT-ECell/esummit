@@ -6,6 +6,7 @@ import { Inter } from "next/font/google";
 import iconHomepage from "./assets/icon_homepage.svg";
 
 const Timeline = dynamic(() => import("@/components/Timeline"), { ssr: false });
+const Speakers = dynamic(() => import("@/components/Speakers"), { ssr: false });
 
 const poppins = Poppins({ weight: "600", subsets: ["latin"] });
 const inter = Inter({ subsets: ["latin"] });
@@ -30,6 +31,10 @@ export default function Home() {
       <div id="timeline">
         <h1>Timeline</h1>
         <Timeline />
+      </div>
+      <div id="speakers">
+        <h1>Speakers</h1>
+        <Speakers />
       </div>
     </>
   );
