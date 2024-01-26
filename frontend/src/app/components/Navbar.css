@@ -1,5 +1,5 @@
 .navbar {
-  /* background-color: blue; */
+  background-color: rgba(0, 0, 0, 0.6);
   position: fixed;
   width: 100vw;
   display: flex;
@@ -8,6 +8,8 @@
   height: 2.5rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  z-index: 100;
+  backdrop-filter: blur(15px);
 
   .left {
     display: flex;
