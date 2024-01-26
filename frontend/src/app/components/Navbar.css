@@ -16,7 +16,7 @@
     align-items: center;
 
     .esummitLogo {
-      width: 4rem; 
+      width: 4rem;
       height: 4rem;
       padding-left: 2rem;
     }
@@ -47,10 +47,9 @@
   cursor: pointer;
 }
 
-.menu-icon{
+.menu-icon {
   margin-right: 20px;
 }
-
 
 @media screen and (max-width: 760px) {
   .navbar {
@@ -59,7 +58,13 @@
     height: 2.5rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    z-index: 100;
+
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(15px) opacity(1);
+    &.menu-open {
+      background-color: rgba(0, 0, 0, 1);
+      backdrop-filter: none;
+    }
   }
 
   .right ul {
@@ -70,18 +75,25 @@
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.6); 
-    transition: max-height 0.3s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(15px)  opacity(1);
+    /* transition: max-height 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out; */
+
+    
   }
 
   .navbar.menu-open .right ul {
-    max-height: 500px; 
+    max-height: 500px;
   }
 
   .right li {
     margin-right: 0;
     padding: 10px;
     text-align: center;
+
+    &:last-child {
+      padding-bottom: 1rem;
+    }
   }
 
   .menu-icon {
@@ -94,7 +106,7 @@
   }
 
   .content {
-    margin-top: 2.5rem; 
+    margin-top: 2.5rem;
     transition: margin-top 0.3s ease;
   }
 }
